@@ -1,10 +1,20 @@
 import pygame
+from cell import Cell
 
-WIDHT = 1200
-HEIGHT = 800
+WIDHT = 120
+HEIGHT = 80
 
-surface = pygame.display.set_model((WIDHT, HEIGHT))
+pygame.init()
+
+surface = pygame.display.set_mode((WIDHT, HEIGHT))
 pygame.display.set_caption('game of the live')
+
+cells = list()
+cells.append(Cell(50, 50, 0, 0))
+
+sprites = pygame.sprite.Group()
+sprites.add(cells)
+
 
 while True:
 
@@ -13,4 +23,5 @@ while True:
             pygame.quit()
 
             sys.exit()
+    
     pygame.display.update()
