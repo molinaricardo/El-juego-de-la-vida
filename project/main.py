@@ -1,8 +1,8 @@
 import pygame
 from cell import Cell
 
-WIDHT = 120
-HEIGHT = 80
+WIDHT = 1200
+HEIGHT = 800
 
 pygame.init()
 
@@ -23,5 +23,5 @@ while True:
             pygame.quit()
 
             sys.exit()
-    
+    sprites.draw(surface)
     pygame.display.update()
