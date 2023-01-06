@@ -3,6 +3,9 @@ import pygame
 LIVE = (255, 255, 255)
 DEATH = (0, 0, 0)
 
+def generate_cells(width_screen, height_screen, width):
+    pass
+
 class Cell(pygame.sprite.Sprite):
 
     def __init__(self, width, height, pos_x, pox_y):
