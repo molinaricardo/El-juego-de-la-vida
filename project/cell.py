@@ -4,7 +4,16 @@ LIVE = (255, 255, 255)
 DEATH = (0, 0, 0)
 
 def generate_cells(width_screen, height_screen, width):
-    pass
+    cells = list()
+
+    for pos_x in range(0, width_screen // width_cell):
+        rows = list()
+        for pos_y in range(0, height_screen // height_cell):
+            rows.append(Cell(width_cell, height_cell, pos_x, pos_y))
+
+        columns.append(rows)
+    
+    return columns 
 
 class Cell(pygame.sprite.Sprite):
 
